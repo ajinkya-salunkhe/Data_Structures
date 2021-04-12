@@ -1,0 +1,14 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    for i in range(0,n):
+        for j in range(i+1,n):
+            if(arr[i]>arr[j]):
+                temp=arr[i]
+                arr[i]=arr[j]
+                arr[j]=temp
+            else:
+                continue
+    for i in range(0,n):
+        print(arr[i])
+    

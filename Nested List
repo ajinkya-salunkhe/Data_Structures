@@ -1,0 +1,22 @@
+if __name__ == '__main__':
+    n=int(input())
+    name = input()
+    score = float(input())
+    a=score
+    b=name
+    for i in range(2,n+1):
+        if(n>=2 and n<=5):
+            name = input()
+            score = float(input())
+            c=score
+            d=name
+            if(a>c):
+                temp=b
+                b=d
+                d=temp
+    print(b)
+                    
+                
+            
+            
+    

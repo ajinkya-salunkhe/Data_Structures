@@ -1,0 +1,20 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+#x=input()
+#x=int(input())
+
+#space seprate inputs : 1 2 3
+#['1','2','3']
+#[1,2,3]
+#r,c=map(int, input().split()) # 5 6
+
+NumEng=int(input())
+EngList=map(int, input().split())
+EngList=list(EngList)
+NumFre=int(input())
+FrenList=map(int, input().split())
+FrenList=list(FrenList)
+
+EngSet=set(EngList)
+FrenSet=set(FrenList)
+
+print(len(EngSet.difference(FrenSet)))

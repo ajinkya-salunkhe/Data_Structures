@@ -1,0 +1,24 @@
+if __name__ == '__main__':
+    N = int(input())#5
+    numlist=[]
+    for _ in range(N):
+        #map(int)
+        command=input()#insert 0 5
+        cmd=command.split(" ")#["insert","0","5"]
+        if cmd[0]=="insert":
+            numlist.insert(int(cmd[1]),int(cmd[2]))
+        elif cmd[0]=="print":
+            print(numlist)
+        elif cmd[0]=="remove":#remove 8
+            numlist.remove(int(cmd[1]))
+        elif cmd[0]=="append":
+            #[append ,69]
+            numlist.append(int(cmd[1]))
+        elif cmd[0]=="sort":
+            numlist.sort()
+        elif cmd[0]=="reverse":
+            numlist.reverse()
+        elif cmd[0]=="pop":
+            numlist.pop()
+        
+        

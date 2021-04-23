@@ -1,0 +1,14 @@
+n=int(input())
+MainList=[]
+for _ in range(n):
+        QList=input().split()
+        MainList.append(QList)
+Query=input()
+"""
+[[Krishna ,'67', '68, 69],
+[Arjun ,70 ,98 ,63],
+[Malika, 52, 56 ,60]]
+"""
+for row in MainList:
+    if Query==row[0]:
+        print(((int(row[1])+int(row[2])+int(row[3]))/3))
